@@ -9,3 +9,10 @@ Jawaban: kode tersebut melakukan deklarasi sekaligus inisialisasi sebuah array b
 3. Apakah class Mahasiswa memiliki konstruktor? Jika tidak, kenapa bisa dilakukan pemanggilan konstruktur pada baris program berikut?
 arrayOfMahasiswa[0] = new Mahasiswa();
 Jawaban: class Mahasiswa tidak memiliki konstruktor yang tertulis secara eksplisit. namun Java secara otomatis menyediakan konstruktor default tanpa parameter apabila programmer tidak mendefinisikan konstruktor apapun. itulah mengapa new Mahasiswa() tetap bisa dipanggil meskipun konstruktor tidak ditulis secara manual di dalam class tersebut.
+4. Apa yang dilakukan oleh kode program berikut?
+arrayOfMahasiswa[0] = new Mahasiswa();
+arrayOfMahasiswa[0].nim = "244107060033";
+arrayOfMahasiswa[0].nama = "AGNES TITANIA KINANTI";
+arrayOfMahasiswa[0].kelas = "SIB-1E";
+arrayOfMahasiswa[0].ipk = (float) 3.75;
+Jawaban: kode tersebut menginstansiasi objek Mahasiswa baru pada index ke-0 dari array arrayOfMahasiswa, kemudian mengisi seluruh atributnya (nim, nama, kelas, ipk) dengan data yang sudah ditentukan. (float) pada baris terakhir adalah casting untuk memastikan nilai 3.75 tersimpan sebagai tipe data float.
